@@ -19,6 +19,9 @@
 		987ADC0A18AA476B00124964 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 987ADBF218AA476B00124964 /* UIKit.framework */; };
 		987ADC1218AA476B00124964 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 987ADC1018AA476B00124964 /* InfoPlist.strings */; };
 		987ADC1418AA476B00124964 /* AnyGoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 987ADC1318AA476B00124964 /* AnyGoTests.m */; };
+		987ADC2218AA4E9E00124964 /* AGTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 987ADC2118AA4E9E00124964 /* AGTabBarController.m */; };
+		987ADC2518AA4F9500124964 /* AGNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 987ADC2418AA4F9500124964 /* AGNavigationController.m */; };
+		987ADC2818AA4FB300124964 /* AGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 987ADC2718AA4FB300124964 /* AGViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,12 @@
 		987ADC0F18AA476B00124964 /* AnyGoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AnyGoTests-Info.plist"; sourceTree = "<group>"; };
 		987ADC1118AA476B00124964 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		987ADC1318AA476B00124964 /* AnyGoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnyGoTests.m; sourceTree = "<group>"; };
+		987ADC2018AA4E9E00124964 /* AGTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTabBarController.h; sourceTree = "<group>"; };
+		987ADC2118AA4E9E00124964 /* AGTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTabBarController.m; sourceTree = "<group>"; };
+		987ADC2318AA4F9500124964 /* AGNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGNavigationController.h; sourceTree = "<group>"; };
+		987ADC2418AA4F9500124964 /* AGNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGNavigationController.m; sourceTree = "<group>"; };
+		987ADC2618AA4FB300124964 /* AGViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGViewController.h; sourceTree = "<group>"; };
+		987ADC2718AA4FB300124964 /* AGViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +159,12 @@
 		987ADC1D18AA4D6300124964 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				987ADC2018AA4E9E00124964 /* AGTabBarController.h */,
+				987ADC2118AA4E9E00124964 /* AGTabBarController.m */,
+				987ADC2318AA4F9500124964 /* AGNavigationController.h */,
+				987ADC2418AA4F9500124964 /* AGNavigationController.m */,
+				987ADC2618AA4FB300124964 /* AGViewController.h */,
+				987ADC2718AA4FB300124964 /* AGViewController.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -264,8 +279,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				987ADC2218AA4E9E00124964 /* AGTabBarController.m in Sources */,
 				987ADBFF18AA476B00124964 /* AGAppDelegate.m in Sources */,
 				987ADBFB18AA476B00124964 /* main.m in Sources */,
+				987ADC2518AA4F9500124964 /* AGNavigationController.m in Sources */,
+				987ADC2818AA4FB300124964 /* AGViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
