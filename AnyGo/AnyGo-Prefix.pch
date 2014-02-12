@@ -14,3 +14,18 @@
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
 #endif
+
+
+#ifdef DEBUG
+#  define LOG(...)				NSLog(__VA_ARGS__)
+#  define LOG_CURRENT_METHOD	NSLog(@"%@", NSStringFromSelector(_cmd))
+#else
+#  define LOG(...) ;
+#  define LOG_CURRENT_METHOD ;
+#endif
+
+#define IPHONE_APP          1
+
+#define     APP_VERSION     [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
+
+#define     AG_ROOT_URL     @"http://www.verycd.com"

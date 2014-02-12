@@ -7,6 +7,8 @@
 //
 
 #import "AGADView.h"
+#import "NSObject+NSJSONSerialization.h"
+#import "ASIHTTPRequest.h"
 
 @implementation AGADView
 
@@ -29,7 +31,7 @@
 #pragma mark - API
 
 -(void)startRequestData {
-
+    
 }
 
 #pragma mark - WWADScrollViewDatasource methods
