@@ -5,7 +5,6 @@ target "AnyGo" do
 
 pod 'PBFlatUI', '~> 1.1.0'
 pod 'ASIHTTPRequest', '~> 1.8.1'
-pod 'JSONKit', '~> 1.5pre'
 
 end
 

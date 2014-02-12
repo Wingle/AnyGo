@@ -25,6 +25,7 @@
 		987ADC2818AA4FB300124964 /* AGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 987ADC2718AA4FB300124964 /* AGViewController.m */; };
 		989B104518AB3AE5008DD357 /* WWADScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 989B104418AB3AE5008DD357 /* WWADScrollView.m */; };
 		989B104B18AB41C0008DD357 /* AGADView.m in Sources */ = {isa = PBXBuildFile; fileRef = 989B104A18AB41C0008DD357 /* AGADView.m */; };
+		989B105718AB5712008DD357 /* NSObject+NSJSONSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 989B105618AB5712008DD357 /* NSObject+NSJSONSerialization.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,8 @@
 		989B104418AB3AE5008DD357 /* WWADScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWADScrollView.m; sourceTree = "<group>"; };
 		989B104918AB41C0008DD357 /* AGADView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGADView.h; sourceTree = "<group>"; };
 		989B104A18AB41C0008DD357 /* AGADView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGADView.m; sourceTree = "<group>"; };
+		989B105518AB5712008DD357 /* NSObject+NSJSONSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+NSJSONSerialization.h"; sourceTree = "<group>"; };
+		989B105618AB5712008DD357 /* NSObject+NSJSONSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+NSJSONSerialization.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +202,7 @@
 		989B104118AB39EF008DD357 /* Public */ = {
 			isa = PBXGroup;
 			children = (
+				989B105418AB5712008DD357 /* JSONKit */,
 				989B104218AB3A89008DD357 /* ADScrollView */,
 			);
 			path = Public;
@@ -213,6 +217,15 @@
 				989B104A18AB41C0008DD357 /* AGADView.m */,
 			);
 			path = ADScrollView;
+			sourceTree = "<group>";
+		};
+		989B105418AB5712008DD357 /* JSONKit */ = {
+			isa = PBXGroup;
+			children = (
+				989B105518AB5712008DD357 /* NSObject+NSJSONSerialization.h */,
+				989B105618AB5712008DD357 /* NSObject+NSJSONSerialization.m */,
+			);
+			path = JSONKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -351,6 +364,7 @@
 				987ADBFF18AA476B00124964 /* AGAppDelegate.m in Sources */,
 				987ADBFB18AA476B00124964 /* main.m in Sources */,
 				987ADC2518AA4F9500124964 /* AGNavigationController.m in Sources */,
+				989B105718AB5712008DD357 /* NSObject+NSJSONSerialization.m in Sources */,
 				989B104B18AB41C0008DD357 /* AGADView.m in Sources */,
 				987ADC2818AA4FB300124964 /* AGViewController.m in Sources */,
 			);
