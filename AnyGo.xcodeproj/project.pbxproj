@@ -26,6 +26,8 @@
 		989B104518AB3AE5008DD357 /* WWADScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 989B104418AB3AE5008DD357 /* WWADScrollView.m */; };
 		989B104B18AB41C0008DD357 /* AGADView.m in Sources */ = {isa = PBXBuildFile; fileRef = 989B104A18AB41C0008DD357 /* AGADView.m */; };
 		989B105718AB5712008DD357 /* NSObject+NSJSONSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 989B105618AB5712008DD357 /* NSObject+NSJSONSerialization.m */; };
+		989B105C18AB5ED3008DD357 /* AGHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 989B105A18AB5ED3008DD357 /* AGHomeViewController.m */; };
+		98ABA93218AC7EFF005C81F6 /* SGFocusImageFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 98ABA93118AC7EFF005C81F6 /* SGFocusImageFrame.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,10 @@
 		989B104A18AB41C0008DD357 /* AGADView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGADView.m; sourceTree = "<group>"; };
 		989B105518AB5712008DD357 /* NSObject+NSJSONSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+NSJSONSerialization.h"; sourceTree = "<group>"; };
 		989B105618AB5712008DD357 /* NSObject+NSJSONSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+NSJSONSerialization.m"; sourceTree = "<group>"; };
+		989B105918AB5ED3008DD357 /* AGHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGHomeViewController.h; sourceTree = "<group>"; };
+		989B105A18AB5ED3008DD357 /* AGHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGHomeViewController.m; sourceTree = "<group>"; };
+		98ABA93018AC7EFF005C81F6 /* SGFocusImageFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGFocusImageFrame.h; sourceTree = "<group>"; };
+		98ABA93118AC7EFF005C81F6 /* SGFocusImageFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGFocusImageFrame.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +137,7 @@
 		987ADBF418AA476B00124964 /* AnyGo */ = {
 			isa = PBXGroup;
 			children = (
+				989B105818AB5EBE008DD357 /* Home */,
 				989B104118AB39EF008DD357 /* Public */,
 				987ADC1E18AA4D7200124964 /* ThirdPart */,
 				987ADC1D18AA4D6300124964 /* Base */,
@@ -188,6 +195,7 @@
 		987ADC1E18AA4D7200124964 /* ThirdPart */ = {
 			isa = PBXGroup;
 			children = (
+				98ABA92F18AC7EFF005C81F6 /* SGFocusImageFrame */,
 			);
 			path = ThirdPart;
 			sourceTree = "<group>";
@@ -226,6 +234,24 @@
 				989B105618AB5712008DD357 /* NSObject+NSJSONSerialization.m */,
 			);
 			path = JSONKit;
+			sourceTree = "<group>";
+		};
+		989B105818AB5EBE008DD357 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				989B105918AB5ED3008DD357 /* AGHomeViewController.h */,
+				989B105A18AB5ED3008DD357 /* AGHomeViewController.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		98ABA92F18AC7EFF005C81F6 /* SGFocusImageFrame */ = {
+			isa = PBXGroup;
+			children = (
+				98ABA93018AC7EFF005C81F6 /* SGFocusImageFrame.h */,
+				98ABA93118AC7EFF005C81F6 /* SGFocusImageFrame.m */,
+			);
+			path = SGFocusImageFrame;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -363,7 +389,9 @@
 				987ADC2218AA4E9E00124964 /* AGTabBarController.m in Sources */,
 				987ADBFF18AA476B00124964 /* AGAppDelegate.m in Sources */,
 				987ADBFB18AA476B00124964 /* main.m in Sources */,
+				98ABA93218AC7EFF005C81F6 /* SGFocusImageFrame.m in Sources */,
 				987ADC2518AA4F9500124964 /* AGNavigationController.m in Sources */,
+				989B105C18AB5ED3008DD357 /* AGHomeViewController.m in Sources */,
 				989B105718AB5712008DD357 /* NSObject+NSJSONSerialization.m in Sources */,
 				989B104B18AB41C0008DD357 /* AGADView.m in Sources */,
 				987ADC2818AA4FB300124964 /* AGViewController.m in Sources */,

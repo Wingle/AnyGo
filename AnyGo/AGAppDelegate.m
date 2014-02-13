@@ -11,6 +11,7 @@
 #import "AGTabBarController.h"
 #import "AGNavigationController.h"
 #import "AGViewController.h"
+#import "AGHomeViewController.h"
 
 @implementation AGAppDelegate
 
@@ -63,7 +64,7 @@
 
 #pragma mark - Custom Methods
 - (void)buildViews {
-    AGViewController *viewController0 = [[AGViewController alloc] init];
+    AGHomeViewController *viewController0 = [[AGHomeViewController alloc] init];
     AGNavigationController *navigationController0 = [[AGNavigationController alloc] initWithRootViewController:viewController0];
     
     AGViewController *viewController1 = [[AGViewController alloc] init];
