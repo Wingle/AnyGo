@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "AGViewController.h"
 
-@interface AGHomeViewController : AGViewController
+@interface AGHomeViewController : AGViewController <UITableViewDataSource, UITableViewDelegate>
 
 @end

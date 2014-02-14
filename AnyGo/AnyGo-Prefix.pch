@@ -24,7 +24,7 @@
 #  define LOG_CURRENT_METHOD ;
 #endif
 
-#define IPHONE_APP          1
+#define     SYM_VERSION     [[[UIDevice currentDevice] systemVersion] floatValue]
 
 #define     APP_VERSION     [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
 
