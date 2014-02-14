@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5A534D70E296444B9BC0E93D /* libPods-AnyGo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00BD39C2CE934595ADE896A5 /* libPods-AnyGo.a */; };
+		9858A89918AE193C0003982E /* libMobClickLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9858A89718AE193C0003982E /* libMobClickLibrary.a */; };
+		9858A89B18AE195C0003982E /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9858A89A18AE195C0003982E /* libz.dylib */; };
 		987ADBEF18AA476B00124964 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 987ADBEE18AA476B00124964 /* Foundation.framework */; };
 		987ADBF118AA476B00124964 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 987ADBF018AA476B00124964 /* CoreGraphics.framework */; };
 		987ADBF318AA476B00124964 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 987ADBF218AA476B00124964 /* UIKit.framework */; };
@@ -43,6 +45,9 @@
 /* Begin PBXFileReference section */
 		00BD39C2CE934595ADE896A5 /* libPods-AnyGo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AnyGo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		56A5242B863345658BB5135A /* Pods-AnyGo.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnyGo.xcconfig"; path = "Pods/Pods-AnyGo.xcconfig"; sourceTree = "<group>"; };
+		9858A89718AE193C0003982E /* libMobClickLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMobClickLibrary.a; sourceTree = "<group>"; };
+		9858A89818AE193C0003982E /* MobClick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobClick.h; sourceTree = "<group>"; };
+		9858A89A18AE195C0003982E /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		987ADBEB18AA476B00124964 /* AnyGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnyGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		987ADBEE18AA476B00124964 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		987ADBF018AA476B00124964 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -82,6 +87,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9858A89B18AE195C0003982E /* libz.dylib in Frameworks */,
+				9858A89918AE193C0003982E /* libMobClickLibrary.a in Frameworks */,
 				987ADBF118AA476B00124964 /* CoreGraphics.framework in Frameworks */,
 				987ADBF318AA476B00124964 /* UIKit.framework in Frameworks */,
 				987ADBEF18AA476B00124964 /* Foundation.framework in Frameworks */,
@@ -102,6 +109,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9858A89618AE193C0003982E /* UMeng */ = {
+			isa = PBXGroup;
+			children = (
+				9858A89718AE193C0003982E /* libMobClickLibrary.a */,
+				9858A89818AE193C0003982E /* MobClick.h */,
+			);
+			path = UMeng;
+			sourceTree = "<group>";
+		};
 		987ADBE218AA476B00124964 = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +141,7 @@
 		987ADBED18AA476B00124964 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9858A89A18AE195C0003982E /* libz.dylib */,
 				987ADBEE18AA476B00124964 /* Foundation.framework */,
 				987ADBF018AA476B00124964 /* CoreGraphics.framework */,
 				987ADBF218AA476B00124964 /* UIKit.framework */,
@@ -195,6 +212,7 @@
 		987ADC1E18AA4D7200124964 /* ThirdPart */ = {
 			isa = PBXGroup;
 			children = (
+				9858A89618AE193C0003982E /* UMeng */,
 				98ABA92F18AC7EFF005C81F6 /* SGFocusImageFrame */,
 			);
 			path = ThirdPart;
@@ -517,6 +535,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AnyGo/AnyGo-Prefix.pch";
 				INFOPLIST_FILE = "AnyGo/AnyGo-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/wingle/Workspace/AnyGo/AnyGo/ThirdPart/UMeng,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -531,6 +553,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AnyGo/AnyGo-Prefix.pch";
 				INFOPLIST_FILE = "AnyGo/AnyGo-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/wingle/Workspace/AnyGo/AnyGo/ThirdPart/UMeng,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+#define UMENG_APPKEY @"52fdcffb56240b04470bb048"
+
 @interface AGAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
