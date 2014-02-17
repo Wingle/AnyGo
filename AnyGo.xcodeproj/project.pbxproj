@@ -30,6 +30,7 @@
 		989B105718AB5712008DD357 /* NSObject+NSJSONSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 989B105618AB5712008DD357 /* NSObject+NSJSONSerialization.m */; };
 		989B105C18AB5ED3008DD357 /* AGHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 989B105A18AB5ED3008DD357 /* AGHomeViewController.m */; };
 		98ABA93218AC7EFF005C81F6 /* SGFocusImageFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 98ABA93118AC7EFF005C81F6 /* SGFocusImageFrame.m */; };
+		98EFE58518B1E4450087B8C2 /* AGLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98EFE58418B1E4450087B8C2 /* AGLoginViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,8 @@
 		989B105A18AB5ED3008DD357 /* AGHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGHomeViewController.m; sourceTree = "<group>"; };
 		98ABA93018AC7EFF005C81F6 /* SGFocusImageFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGFocusImageFrame.h; sourceTree = "<group>"; };
 		98ABA93118AC7EFF005C81F6 /* SGFocusImageFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGFocusImageFrame.m; sourceTree = "<group>"; };
+		98EFE58318B1E4450087B8C2 /* AGLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGLoginViewController.h; sourceTree = "<group>"; };
+		98EFE58418B1E4450087B8C2 /* AGLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGLoginViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +157,7 @@
 		987ADBF418AA476B00124964 /* AnyGo */ = {
 			isa = PBXGroup;
 			children = (
+				98EFE58218B1E42A0087B8C2 /* LS */,
 				989B105818AB5EBE008DD357 /* Home */,
 				989B104118AB39EF008DD357 /* Public */,
 				987ADC1E18AA4D7200124964 /* ThirdPart */,
@@ -270,6 +274,15 @@
 				98ABA93118AC7EFF005C81F6 /* SGFocusImageFrame.m */,
 			);
 			path = SGFocusImageFrame;
+			sourceTree = "<group>";
+		};
+		98EFE58218B1E42A0087B8C2 /* LS */ = {
+			isa = PBXGroup;
+			children = (
+				98EFE58318B1E4450087B8C2 /* AGLoginViewController.h */,
+				98EFE58418B1E4450087B8C2 /* AGLoginViewController.m */,
+			);
+			path = LS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -412,6 +425,7 @@
 				989B105C18AB5ED3008DD357 /* AGHomeViewController.m in Sources */,
 				989B105718AB5712008DD357 /* NSObject+NSJSONSerialization.m in Sources */,
 				989B104B18AB41C0008DD357 /* AGADView.m in Sources */,
+				98EFE58518B1E4450087B8C2 /* AGLoginViewController.m in Sources */,
 				987ADC2818AA4FB300124964 /* AGViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -540,6 +554,7 @@
 					/Users/wingle/Workspace/AnyGo/AnyGo/ThirdPart/UMeng,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;

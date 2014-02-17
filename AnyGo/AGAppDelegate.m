@@ -12,6 +12,8 @@
 #import "AGNavigationController.h"
 #import "AGViewController.h"
 #import "AGHomeViewController.h"
+#import "AGLoginViewController.h"
+
 #import "MobClick.h"
 
 @implementation AGAppDelegate
@@ -83,15 +85,19 @@
 
 - (void)buildViews {
     AGHomeViewController *viewController0 = [[AGHomeViewController alloc] init];
+    viewController0.view.backgroundColor = [UIColor redColor];
     AGNavigationController *navigationController0 = [[AGNavigationController alloc] initWithRootViewController:viewController0];
     
     AGViewController *viewController1 = [[AGViewController alloc] init];
+    viewController1.view.backgroundColor = [UIColor greenColor];
     AGNavigationController *navigationController1 = [[AGNavigationController alloc] initWithRootViewController:viewController1];
     
     AGViewController *viewController2 = [[AGViewController alloc] init];
+    viewController2.view.backgroundColor = [UIColor yellowColor];
     AGNavigationController *navigationController2 = [[AGNavigationController alloc] initWithRootViewController:viewController2];
     
     AGViewController *viewController3 = [[AGViewController alloc] init];
+    viewController3.view.backgroundColor = [UIColor orangeColor];
     AGNavigationController *navigationController3 = [[AGNavigationController alloc] initWithRootViewController:viewController3];
     
     AGTabBarController *tabBarContrller = [[AGTabBarController alloc] init];
@@ -106,26 +112,24 @@
 }
 
 - (void)onlineConfigCallBack:(NSNotification *)note {
-    
-    NSLog(@"online config has fininshed and note = %@", note.userInfo);
+    LOG(@"online config has fininshed and note = %@", note.userInfo);
 }
 
-- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController {
-    LOG(@"tabBarController.selectedIndex = %d",tabBarController.selectedIndex);
-    switch (tabBarController.selectedIndex) {
-        case 0:
+- (BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController {
+    if ([viewController isKindOfClass:[UINavigationController class]]) {
+        UINavigationController *vc = (UINavigationController *)viewController;
+        if ([vc.topViewController isKindOfClass:[AGHomeViewController class]]) {
+            LOG(@"Home.....");
             [MobClick event:@"Shouye"];
-            break;
-        case 1:
-            break;
-        case 2:
-            break;
-        case 3:
-            break;
-            
-        default:
-            break;
+        }else {
+            AGLoginViewController *loginViewContrller = [[AGLoginViewController alloc] init];
+            AGNavigationController *loginNavigationController = [[AGNavigationController alloc] initWithRootViewController:loginViewContrller];
+            [tabBarController presentViewController:loginNavigationController animated:YES completion:nil];
+            return NO;
+        }
+        
     }
+    return YES;
 }
 
 @end
