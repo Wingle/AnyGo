@@ -95,6 +95,7 @@
     AGNavigationController *navigationController3 = [[AGNavigationController alloc] initWithRootViewController:viewController3];
     
     AGTabBarController *tabBarContrller = [[AGTabBarController alloc] init];
+    tabBarContrller.delegate = self;
     tabBarContrller.viewControllers = @[navigationController0, navigationController1, navigationController2, navigationController3];
     
     self.window.rootViewController = tabBarContrller;
@@ -107,6 +108,24 @@
 - (void)onlineConfigCallBack:(NSNotification *)note {
     
     NSLog(@"online config has fininshed and note = %@", note.userInfo);
+}
+
+- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController {
+    LOG(@"tabBarController.selectedIndex = %d",tabBarController.selectedIndex);
+    switch (tabBarController.selectedIndex) {
+        case 0:
+            [MobClick event:@"Shouye"];
+            break;
+        case 1:
+            break;
+        case 2:
+            break;
+        case 3:
+            break;
+            
+        default:
+            break;
+    }
 }
 
 @end

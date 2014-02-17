@@ -10,7 +10,7 @@
 
 #define UMENG_APPKEY @"52fdcffb56240b04470bb048"
 
-@interface AGAppDelegate : UIResponder <UIApplicationDelegate>
+@interface AGAppDelegate : UIResponder <UIApplicationDelegate, UITabBarControllerDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
