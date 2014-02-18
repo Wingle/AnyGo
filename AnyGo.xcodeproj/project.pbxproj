@@ -31,6 +31,8 @@
 		989B105C18AB5ED3008DD357 /* AGHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 989B105A18AB5ED3008DD357 /* AGHomeViewController.m */; };
 		98ABA93218AC7EFF005C81F6 /* SGFocusImageFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 98ABA93118AC7EFF005C81F6 /* SGFocusImageFrame.m */; };
 		98EFE58518B1E4450087B8C2 /* AGLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98EFE58418B1E4450087B8C2 /* AGLoginViewController.m */; };
+		98EFE58818B214DA0087B8C2 /* AGRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98EFE58718B214DA0087B8C2 /* AGRegisterViewController.m */; };
+		98EFE58B18B22A140087B8C2 /* AGSettingPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98EFE58A18B22A140087B8C2 /* AGSettingPasswordViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +85,10 @@
 		98ABA93118AC7EFF005C81F6 /* SGFocusImageFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGFocusImageFrame.m; sourceTree = "<group>"; };
 		98EFE58318B1E4450087B8C2 /* AGLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGLoginViewController.h; sourceTree = "<group>"; };
 		98EFE58418B1E4450087B8C2 /* AGLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGLoginViewController.m; sourceTree = "<group>"; };
+		98EFE58618B214DA0087B8C2 /* AGRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGRegisterViewController.h; sourceTree = "<group>"; };
+		98EFE58718B214DA0087B8C2 /* AGRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGRegisterViewController.m; sourceTree = "<group>"; };
+		98EFE58918B22A140087B8C2 /* AGSettingPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGSettingPasswordViewController.h; sourceTree = "<group>"; };
+		98EFE58A18B22A140087B8C2 /* AGSettingPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGSettingPasswordViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -281,6 +287,10 @@
 			children = (
 				98EFE58318B1E4450087B8C2 /* AGLoginViewController.h */,
 				98EFE58418B1E4450087B8C2 /* AGLoginViewController.m */,
+				98EFE58618B214DA0087B8C2 /* AGRegisterViewController.h */,
+				98EFE58718B214DA0087B8C2 /* AGRegisterViewController.m */,
+				98EFE58918B22A140087B8C2 /* AGSettingPasswordViewController.h */,
+				98EFE58A18B22A140087B8C2 /* AGSettingPasswordViewController.m */,
 			);
 			path = LS;
 			sourceTree = "<group>";
@@ -416,6 +426,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98EFE58B18B22A140087B8C2 /* AGSettingPasswordViewController.m in Sources */,
 				989B104518AB3AE5008DD357 /* WWADScrollView.m in Sources */,
 				987ADC2218AA4E9E00124964 /* AGTabBarController.m in Sources */,
 				987ADBFF18AA476B00124964 /* AGAppDelegate.m in Sources */,
@@ -425,6 +436,7 @@
 				989B105C18AB5ED3008DD357 /* AGHomeViewController.m in Sources */,
 				989B105718AB5712008DD357 /* NSObject+NSJSONSerialization.m in Sources */,
 				989B104B18AB41C0008DD357 /* AGADView.m in Sources */,
+				98EFE58818B214DA0087B8C2 /* AGRegisterViewController.m in Sources */,
 				98EFE58518B1E4450087B8C2 /* AGLoginViewController.m in Sources */,
 				987ADC2818AA4FB300124964 /* AGViewController.m in Sources */,
 			);

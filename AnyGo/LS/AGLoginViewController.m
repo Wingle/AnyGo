@@ -10,6 +10,7 @@
 #import "PBFlatBarButtonItems.h"
 #import "PBFlatButton.h"
 #import "PBFlatTextfield.h"
+#import "AGRegisterViewController.h"
 
 @interface AGLoginViewController () <UITextFieldDelegate>
 @property (nonatomic, strong) PBFlatTextfield *usernameTextField;
@@ -35,10 +36,10 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    self.title = @"登录";
+    
     UIBarButtonItem *backItem = [PBFlatBarButtonItems backBarButtonItemWithTarget:self selector:@selector(beBack:)];
     [self.navigationItem setLeftBarButtonItem:backItem];
-    
-    self.title = @"登录";
     
     [self buildViews];
     
@@ -60,16 +61,17 @@
 }
 
 - (IBAction)registerButtonClicked:(id)sender {
-    
+    AGRegisterViewController *registerContrller = [[AGRegisterViewController alloc] init];
+    [self.navigationController pushViewController:registerContrller animated:YES];
 }
 
 - (void)buildViews {
     CGFloat originX = 20.f;
     CGFloat originY = 30.f;
     CGFloat labelWidth = 90.f;
-    CGFloat verticalInterval = 30.f;
+    CGFloat verticalInterval = 20.f;
     CGFloat textFieldWidth = self.view.bounds.size.width - originX*2 - labelWidth;
-    CGFloat height = 30.f;
+    CGFloat height = 40.f;
     CGFloat buttonHeight = 40.f;
     CGFloat buttonWidth = 120.f;
     
@@ -105,7 +107,7 @@
     }
     
     if (self.registerButton == nil) {
-        self.registerButton = [[PBFlatButton alloc] initWithFrame:CGRectMake(originX + buttonWidth + verticalInterval+ 10.f, yOffset, buttonWidth, buttonHeight)];
+        self.registerButton = [[PBFlatButton alloc] initWithFrame:CGRectMake(320.f - originX - buttonWidth, yOffset, buttonWidth, buttonHeight)];
         [self.registerButton setTitle:@"注册" forState:UIControlStateNormal];
         [self.registerButton addTarget:self action:@selector(registerButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
         [self.view addSubview:self.registerButton];

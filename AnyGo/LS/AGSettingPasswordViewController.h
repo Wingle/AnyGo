@@ -1,5 +1,5 @@
 //
-//  AGLoginViewController.h
+//  AGSettingPasswordViewController.h
 //  AnyGo
 //
 //  Created by WingleWong on 14-2-17.
@@ -8,6 +8,6 @@
 
 #import "AGViewController.h"
 
-@interface AGLoginViewController : AGViewController
+@interface AGSettingPasswordViewController : AGViewController
 
 @end
