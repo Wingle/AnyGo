@@ -9,5 +9,12 @@
 #import "AGViewController.h"
 
 @interface AGDistributeViewController : AGViewController
+@property (weak, nonatomic) IBOutlet UITextField *femaleNumTextField;
+@property (weak, nonatomic) IBOutlet UITextField *maleNumTextField;
+@property (weak, nonatomic) IBOutlet UISwitch *driveSwitch;
+@property (weak, nonatomic) IBOutlet UISwitch *discussEnableSwitch;
+@property (weak, nonatomic) IBOutlet UISwitch *gohomeSwitch;
+
+- (IBAction)planButtonClicked:(id)sender;
 
 @end
