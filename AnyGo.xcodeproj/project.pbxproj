@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		5A534D70E296444B9BC0E93D /* libPods-AnyGo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00BD39C2CE934595ADE896A5 /* libPods-AnyGo.a */; };
-		9858A89918AE193C0003982E /* libMobClickLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9858A89718AE193C0003982E /* libMobClickLibrary.a */; };
 		9858A89B18AE195C0003982E /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9858A89A18AE195C0003982E /* libz.dylib */; };
 		987ADBEF18AA476B00124964 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 987ADBEE18AA476B00124964 /* Foundation.framework */; };
 		987ADBF118AA476B00124964 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 987ADBF018AA476B00124964 /* CoreGraphics.framework */; };
@@ -33,6 +32,9 @@
 		98EFE58518B1E4450087B8C2 /* AGLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98EFE58418B1E4450087B8C2 /* AGLoginViewController.m */; };
 		98EFE58818B214DA0087B8C2 /* AGRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98EFE58718B214DA0087B8C2 /* AGRegisterViewController.m */; };
 		98EFE58B18B22A140087B8C2 /* AGSettingPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98EFE58A18B22A140087B8C2 /* AGSettingPasswordViewController.m */; };
+		A0706F8B19458A3200BBBC32 /* AGDistributeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0706F8919458A3200BBBC32 /* AGDistributeViewController.m */; };
+		A0706F8C19458A3200BBBC32 /* AGDistributeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0706F8A19458A3200BBBC32 /* AGDistributeViewController.xib */; };
+		A0B391B61947FD9D0000C1DA /* MMLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B391B51947FD9D0000C1DA /* MMLocationManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,8 +50,6 @@
 /* Begin PBXFileReference section */
 		00BD39C2CE934595ADE896A5 /* libPods-AnyGo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AnyGo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		56A5242B863345658BB5135A /* Pods-AnyGo.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnyGo.xcconfig"; path = "Pods/Pods-AnyGo.xcconfig"; sourceTree = "<group>"; };
-		9858A89718AE193C0003982E /* libMobClickLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMobClickLibrary.a; sourceTree = "<group>"; };
-		9858A89818AE193C0003982E /* MobClick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobClick.h; sourceTree = "<group>"; };
 		9858A89A18AE195C0003982E /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		987ADBEB18AA476B00124964 /* AnyGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnyGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		987ADBEE18AA476B00124964 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -89,6 +89,11 @@
 		98EFE58718B214DA0087B8C2 /* AGRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGRegisterViewController.m; sourceTree = "<group>"; };
 		98EFE58918B22A140087B8C2 /* AGSettingPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGSettingPasswordViewController.h; sourceTree = "<group>"; };
 		98EFE58A18B22A140087B8C2 /* AGSettingPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGSettingPasswordViewController.m; sourceTree = "<group>"; };
+		A0706F8819458A3200BBBC32 /* AGDistributeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGDistributeViewController.h; sourceTree = "<group>"; };
+		A0706F8919458A3200BBBC32 /* AGDistributeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGDistributeViewController.m; sourceTree = "<group>"; };
+		A0706F8A19458A3200BBBC32 /* AGDistributeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AGDistributeViewController.xib; sourceTree = "<group>"; };
+		A0B391B41947FD9D0000C1DA /* MMLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMLocationManager.h; sourceTree = "<group>"; };
+		A0B391B51947FD9D0000C1DA /* MMLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMLocationManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +102,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9858A89B18AE195C0003982E /* libz.dylib in Frameworks */,
-				9858A89918AE193C0003982E /* libMobClickLibrary.a in Frameworks */,
 				987ADBF118AA476B00124964 /* CoreGraphics.framework in Frameworks */,
 				987ADBF318AA476B00124964 /* UIKit.framework in Frameworks */,
 				987ADBEF18AA476B00124964 /* Foundation.framework in Frameworks */,
@@ -118,15 +122,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9858A89618AE193C0003982E /* UMeng */ = {
-			isa = PBXGroup;
-			children = (
-				9858A89718AE193C0003982E /* libMobClickLibrary.a */,
-				9858A89818AE193C0003982E /* MobClick.h */,
-			);
-			path = UMeng;
-			sourceTree = "<group>";
-		};
 		987ADBE218AA476B00124964 = {
 			isa = PBXGroup;
 			children = (
@@ -163,6 +158,7 @@
 		987ADBF418AA476B00124964 /* AnyGo */ = {
 			isa = PBXGroup;
 			children = (
+				A0706F8719458A1200BBBC32 /* Distribute */,
 				98EFE58218B1E42A0087B8C2 /* LS */,
 				989B105818AB5EBE008DD357 /* Home */,
 				989B104118AB39EF008DD357 /* Public */,
@@ -222,7 +218,7 @@
 		987ADC1E18AA4D7200124964 /* ThirdPart */ = {
 			isa = PBXGroup;
 			children = (
-				9858A89618AE193C0003982E /* UMeng */,
+				A0B391B31947FD9D0000C1DA /* MMLocationManager */,
 				98ABA92F18AC7EFF005C81F6 /* SGFocusImageFrame */,
 			);
 			path = ThirdPart;
@@ -293,6 +289,25 @@
 				98EFE58A18B22A140087B8C2 /* AGSettingPasswordViewController.m */,
 			);
 			path = LS;
+			sourceTree = "<group>";
+		};
+		A0706F8719458A1200BBBC32 /* Distribute */ = {
+			isa = PBXGroup;
+			children = (
+				A0706F8819458A3200BBBC32 /* AGDistributeViewController.h */,
+				A0706F8919458A3200BBBC32 /* AGDistributeViewController.m */,
+				A0706F8A19458A3200BBBC32 /* AGDistributeViewController.xib */,
+			);
+			path = Distribute;
+			sourceTree = "<group>";
+		};
+		A0B391B31947FD9D0000C1DA /* MMLocationManager */ = {
+			isa = PBXGroup;
+			children = (
+				A0B391B41947FD9D0000C1DA /* MMLocationManager.h */,
+				A0B391B51947FD9D0000C1DA /* MMLocationManager.m */,
+			);
+			path = MMLocationManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -374,6 +389,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				987ADBF918AA476B00124964 /* InfoPlist.strings in Resources */,
+				A0706F8C19458A3200BBBC32 /* AGDistributeViewController.xib in Resources */,
 				987ADC0118AA476B00124964 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,8 +443,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				98EFE58B18B22A140087B8C2 /* AGSettingPasswordViewController.m in Sources */,
+				A0B391B61947FD9D0000C1DA /* MMLocationManager.m in Sources */,
 				989B104518AB3AE5008DD357 /* WWADScrollView.m in Sources */,
 				987ADC2218AA4E9E00124964 /* AGTabBarController.m in Sources */,
+				A0706F8B19458A3200BBBC32 /* AGDistributeViewController.m in Sources */,
 				987ADBFF18AA476B00124964 /* AGAppDelegate.m in Sources */,
 				987ADBFB18AA476B00124964 /* main.m in Sources */,
 				98ABA93218AC7EFF005C81F6 /* SGFocusImageFrame.m in Sources */,
@@ -558,6 +576,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Qin Fang (FZHQ5464RV)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AnyGo/AnyGo-Prefix.pch";
 				INFOPLIST_FILE = "AnyGo/AnyGo-Info.plist";
@@ -566,7 +585,7 @@
 					/Users/wingle/Workspace/AnyGo/AnyGo/ThirdPart/UMeng,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "B4C44EA2-463B-40FD-8999-3AAC52325263";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -585,6 +604,7 @@
 					/Users/wingle/Workspace/AnyGo/AnyGo/ThirdPart/UMeng,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "B4C44EA2-463B-40FD-8999-3AAC52325263";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

@@ -13,8 +13,11 @@
 #import "AGViewController.h"
 #import "AGHomeViewController.h"
 #import "AGLoginViewController.h"
+#import "AGDistributeViewController.h"
 
-#import "MobClick.h"
+#import <UMengAnalytics/MobClick.h>
+
+#import <PBFlatUI/PBFlatSettings.h>
 
 @implementation AGAppDelegate
 
@@ -25,15 +28,6 @@
     self.window.backgroundColor = [UIColor whiteColor];
     
     [self umengTrack];
-    
-//    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7) {
-//        [application setStatusBarStyle:UIStatusBarStyleLightContent];
-//        self.window.clipsToBounds =YES;
-//        self.window.frame =  CGRectMake(0,20,self.window.frame.size.width,self.window.frame.size.height-20);
-//        
-//        //Added on 19th Sep 2013
-//        self.window.bounds = CGRectMake(0, 20, self.window.frame.size.width, self.window.frame.size.height);
-//    }
     [self buildViews];
     
     [self.window makeKeyAndVisible];
@@ -96,8 +90,8 @@
     viewController2.view.backgroundColor = [UIColor yellowColor];
     AGNavigationController *navigationController2 = [[AGNavigationController alloc] initWithRootViewController:viewController2];
     
-    AGViewController *viewController3 = [[AGViewController alloc] init];
-    viewController3.view.backgroundColor = [UIColor orangeColor];
+    AGDistributeViewController *viewController3 = [[AGDistributeViewController alloc] init];
+    viewController3.view.backgroundColor = [UIColor lightGrayColor];
     AGNavigationController *navigationController3 = [[AGNavigationController alloc] initWithRootViewController:viewController3];
     
     AGTabBarController *tabBarContrller = [[AGTabBarController alloc] init];
@@ -106,6 +100,7 @@
     
     self.window.rootViewController = tabBarContrller;
     
+    [PBFlatSettings sharedInstance].mainColor = [UIColor greenColor];
     [[PBFlatSettings sharedInstance] navigationBarApperance];
     
     
@@ -122,10 +117,10 @@
             LOG(@"Home.....");
             [MobClick event:@"Shouye"];
         }else {
-            AGLoginViewController *loginViewContrller = [[AGLoginViewController alloc] init];
-            AGNavigationController *loginNavigationController = [[AGNavigationController alloc] initWithRootViewController:loginViewContrller];
-            [tabBarController presentViewController:loginNavigationController animated:YES completion:nil];
-            return NO;
+//            AGLoginViewController *loginViewContrller = [[AGLoginViewController alloc] init];
+//            AGNavigationController *loginNavigationController = [[AGNavigationController alloc] initWithRootViewController:loginViewContrller];
+//            [tabBarController presentViewController:loginNavigationController animated:YES completion:nil];
+//            return NO;
         }
         
     }
