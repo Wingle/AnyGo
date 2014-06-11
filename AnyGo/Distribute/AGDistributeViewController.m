@@ -7,6 +7,8 @@
 //
 
 #import "AGDistributeViewController.h"
+#import "AGPlaViewController.h"
+#import "AGNavigationController.h"
 
 @interface AGDistributeViewController ()
 
@@ -57,6 +59,9 @@
 }
 
 - (IBAction)planButtonClicked:(id)sender {
+    AGPlaViewController *planVc = [[AGPlaViewController alloc] initWithNibName:@"AGPlaViewController" bundle:nil];
+    planVc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:planVc animated:YES];
 }
 
 #pragma mark - Uitility methods

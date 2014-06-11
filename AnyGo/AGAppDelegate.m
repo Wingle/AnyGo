@@ -19,6 +19,9 @@
 
 #import <PBFlatUI/PBFlatSettings.h>
 
+#import <IQKeyboardManager/IQKeyboardManager.h>
+#import <IQKeyboardManager/IQSegmentedNextPrevious.h>
+
 @implementation AGAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -29,6 +32,7 @@
     
     [self umengTrack];
     [self buildViews];
+    [IQKeyboardManager sharedManager].enable = YES;
     
     [self.window makeKeyAndVisible];
     return YES;
