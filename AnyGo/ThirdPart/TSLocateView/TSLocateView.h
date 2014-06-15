@@ -10,6 +10,11 @@
 #import <QuartzCore/QuartzCore.h>
 #import "TSLocation.h"
 
+typedef NS_ENUM(NSInteger, TSLocateType) {
+    TSLocateCN = 0,
+    TSLocateGlobal
+};
+
 @interface TSLocateView : UIActionSheet<UIPickerViewDelegate, UIPickerViewDataSource> {
 @private
     NSArray *provinces;
@@ -19,8 +24,9 @@
 @property (strong, nonatomic) IBOutlet UILabel *titleLabel;
 @property (strong, nonatomic) IBOutlet UIPickerView *locatePicker;
 @property (strong, nonatomic) TSLocation *locate;
+@property (nonatomic, assign) TSLocateType type;
 
-- (id)initWithTitle:(NSString *)title delegate:(id /*<UIActionSheetDelegate>*/)delegate;
+- (id)initWithTitle:(NSString *)title andLocationType:(TSLocateType)type delegate:(id /*<UIActionSheetDelegate>*/)delegate;
 
 - (void)showInView:(UIView *)view;
 

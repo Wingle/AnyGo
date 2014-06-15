@@ -13,6 +13,7 @@
 @interface AGDistributeViewController ()
 
 @property (nonatomic, strong) UISegmentedControl *segmentedControl;
+@property (nonatomic, assign) TSLocateType locateType;
 
 @end
 
@@ -37,6 +38,10 @@
     self.segmentedControl.tintColor = [UIColor greenColor];
     self.segmentedControl.frame = CGRectMake(0, 0, 130.f, 29.f);
     self.segmentedControl.selectedSegmentIndex = 0;
+    self.locateType = 0;
+    [self.segmentedControl addTarget:self
+                         action:@selector(actionChanged:)
+               forControlEvents:UIControlEventValueChanged];
     self.navigationItem.titleView = self.segmentedControl;
     
     
@@ -61,12 +66,17 @@
 - (IBAction)planButtonClicked:(id)sender {
     AGPlaViewController *planVc = [[AGPlaViewController alloc] initWithNibName:@"AGPlaViewController" bundle:nil];
     planVc.hidesBottomBarWhenPushed = YES;
+    planVc.locateType = self.locateType;
     [self.navigationController pushViewController:planVc animated:YES];
 }
 
 #pragma mark - Uitility methods
 - (void)distributePlan:(id)sender {
     
+}
+
+- (void)actionChanged:(id)sender {
+    self.locateType = self.segmentedControl.selectedSegmentIndex;
 }
 
 #pragma mark - textfileld delegate 

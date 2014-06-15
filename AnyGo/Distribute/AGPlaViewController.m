@@ -11,10 +11,11 @@
 #import "AGAddressViewController.h"
 #import "AGPlanModel.h"
 
-@interface AGPlaViewController () <UITableViewDataSource, UITableViewDelegate>
+@interface AGPlaViewController () <UITableViewDataSource, UITableViewDelegate, UIActionSheetDelegate>
 
 @property (strong, nonatomic) UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *dataSource;
+
 
 @end
 
@@ -65,9 +66,12 @@
 }
 
 - (IBAction)getAddressButtonClicked:(id)sender {
+    
 }
 
 - (IBAction)endAddressButtonClicked:(id)sender {
+    TSLocateView *locateView = [[TSLocateView alloc] initWithTitle:@"选择城市" andLocationType:self.locateType delegate:self];
+    [locateView showInView:self.view];
 }
 
 #pragma mark - Utility Methods
@@ -115,6 +119,20 @@
     }
     
     return cell;
+}
+
+#pragma mark - UIActionSheetDelegate
+- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
+    TSLocateView *locateView = (TSLocateView *)actionSheet;
+    TSLocation *location = locateView.locate;
+    LOG(@"city:%@ lat:%f lon:%f", location.city, location.latitude, location.longitude);
+    //You can uses location to your application.
+    if(buttonIndex == 0) {
+        LOG(@"Cancel");
+    }else {
+        LOG(@"Select");
+        self.endAddress.text = location.city;
+    }
 }
 
 

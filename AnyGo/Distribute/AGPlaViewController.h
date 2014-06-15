@@ -7,6 +7,7 @@
 //
 
 #import "AGViewController.h"
+#import "TSLocateView.h"
 
 @class UIPlaceHolderTextView;
 @class AGPlanModel;
@@ -20,6 +21,7 @@
 @property (weak, nonatomic) IBOutlet UIView *showLineView;
 @property (weak, nonatomic) IBOutlet UIPlaceHolderTextView *startTextView;
 @property (weak, nonatomic) IBOutlet UIPlaceHolderTextView *endTextView;
+@property (nonatomic, assign) TSLocateType locateType;
 
 
 - (IBAction)dateButtonClicked:(id)sender;

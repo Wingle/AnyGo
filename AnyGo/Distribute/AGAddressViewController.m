@@ -8,7 +8,6 @@
 
 #import "AGAddressViewController.h"
 #import "AGPlaViewController.h"
-#import "TSLocateView.h"
 #import "AGPlanModel.h"
 
 @interface AGAddressViewController () <UIActionSheetDelegate>
@@ -40,7 +39,7 @@
 }
 
 - (IBAction)addressButtonClicked:(id)sender {
-    TSLocateView *locateView = [[TSLocateView alloc] initWithTitle:@"选择城市" delegate:self];
+    TSLocateView *locateView = [[TSLocateView alloc] initWithTitle:@"选择城市" andLocationType:self.planViewController.locateType delegate:self];
     [locateView showInView:self.view];
 }
 

@@ -16,7 +16,7 @@
 @synthesize locatePicker;
 @synthesize locate;
 
-- (id)initWithTitle:(NSString *)title delegate:(id /*<UIActionSheetDelegate>*/)delegate
+- (id)initWithTitle:(NSString *)title andLocationType:(TSLocateType)type delegate:(id /*<UIActionSheetDelegate>*/)delegate
 {
     self = [[[NSBundle mainBundle] loadNibNamed:@"TSLocateView" owner:self options:nil] objectAtIndex:0];
     if (self) {
@@ -24,9 +24,16 @@
         self.titleLabel.text = title;
         self.locatePicker.dataSource = self;
         self.locatePicker.delegate = self;
+        self.type = type;
         
         //加载数据
-        provinces = [[NSArray alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"ProvincesAndCities.plist" ofType:nil]];
+        NSString *fileName = nil;
+        if (self.type == TSLocateCN) {
+            fileName = @"ProvincesAndCities.plist";
+        }else {
+            fileName = @"Global.plist";
+        }
+        provinces = [[NSArray alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:fileName ofType:nil]];
         cities = [[provinces objectAtIndex:0] objectForKey:@"Cities"];
         
         //初始化默认数据
