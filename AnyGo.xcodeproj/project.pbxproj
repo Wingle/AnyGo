@@ -42,6 +42,17 @@
 		A0B391BE194860310000C1DA /* AGPlanModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B391BD194860310000C1DA /* AGPlanModel.m */; };
 		A0B391CC194867E10000C1DA /* AGPlanDestinationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B391CA194867E10000C1DA /* AGPlanDestinationTableViewCell.m */; };
 		A0B391CD194867E10000C1DA /* AGPlanDestinationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0B391CB194867E10000C1DA /* AGPlanDestinationTableViewCell.xib */; };
+		A0CF7330194D4671005A4436 /* bg_023@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A0CF7323194D4671005A4436 /* bg_023@2x.png */; };
+		A0CF7331194D4671005A4436 /* btn_020.disable@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A0CF7324194D4671005A4436 /* btn_020.disable@2x.png */; };
+		A0CF7332194D4671005A4436 /* btn_020.press@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A0CF7325194D4671005A4436 /* btn_020.press@2x.png */; };
+		A0CF7333194D4671005A4436 /* btn_020@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A0CF7326194D4671005A4436 /* btn_020@2x.png */; };
+		A0CF7334194D4671005A4436 /* btn_021.disable@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A0CF7327194D4671005A4436 /* btn_021.disable@2x.png */; };
+		A0CF7335194D4671005A4436 /* btn_021.press@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A0CF7328194D4671005A4436 /* btn_021.press@2x.png */; };
+		A0CF7336194D4671005A4436 /* btn_021@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A0CF7329194D4671005A4436 /* btn_021@2x.png */; };
+		A0CF7337194D4671005A4436 /* ProvincesAndCities.plist in Resources */ = {isa = PBXBuildFile; fileRef = A0CF732A194D4671005A4436 /* ProvincesAndCities.plist */; };
+		A0CF7338194D4671005A4436 /* TSLocateView.m in Sources */ = {isa = PBXBuildFile; fileRef = A0CF732C194D4671005A4436 /* TSLocateView.m */; };
+		A0CF7339194D4671005A4436 /* TSLocateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0CF732D194D4671005A4436 /* TSLocateView.xib */; };
+		A0CF733A194D4671005A4436 /* TSLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = A0CF732F194D4671005A4436 /* TSLocation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +123,19 @@
 		A0B391C9194867E10000C1DA /* AGPlanDestinationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGPlanDestinationTableViewCell.h; sourceTree = "<group>"; };
 		A0B391CA194867E10000C1DA /* AGPlanDestinationTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGPlanDestinationTableViewCell.m; sourceTree = "<group>"; };
 		A0B391CB194867E10000C1DA /* AGPlanDestinationTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AGPlanDestinationTableViewCell.xib; sourceTree = "<group>"; };
+		A0CF7323194D4671005A4436 /* bg_023@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg_023@2x.png"; sourceTree = "<group>"; };
+		A0CF7324194D4671005A4436 /* btn_020.disable@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_020.disable@2x.png"; sourceTree = "<group>"; };
+		A0CF7325194D4671005A4436 /* btn_020.press@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_020.press@2x.png"; sourceTree = "<group>"; };
+		A0CF7326194D4671005A4436 /* btn_020@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_020@2x.png"; sourceTree = "<group>"; };
+		A0CF7327194D4671005A4436 /* btn_021.disable@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_021.disable@2x.png"; sourceTree = "<group>"; };
+		A0CF7328194D4671005A4436 /* btn_021.press@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_021.press@2x.png"; sourceTree = "<group>"; };
+		A0CF7329194D4671005A4436 /* btn_021@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_021@2x.png"; sourceTree = "<group>"; };
+		A0CF732A194D4671005A4436 /* ProvincesAndCities.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ProvincesAndCities.plist; sourceTree = "<group>"; };
+		A0CF732B194D4671005A4436 /* TSLocateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSLocateView.h; sourceTree = "<group>"; };
+		A0CF732C194D4671005A4436 /* TSLocateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSLocateView.m; sourceTree = "<group>"; };
+		A0CF732D194D4671005A4436 /* TSLocateView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TSLocateView.xib; sourceTree = "<group>"; };
+		A0CF732E194D4671005A4436 /* TSLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSLocation.h; sourceTree = "<group>"; };
+		A0CF732F194D4671005A4436 /* TSLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSLocation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,6 +260,7 @@
 		987ADC1E18AA4D7200124964 /* ThirdPart */ = {
 			isa = PBXGroup;
 			children = (
+				A0CF7321194D4671005A4436 /* TSLocateView */,
 				A0B391B31947FD9D0000C1DA /* MMLocationManager */,
 				98ABA92F18AC7EFF005C81F6 /* SGFocusImageFrame */,
 			);
@@ -339,6 +364,34 @@
 			path = MMLocationManager;
 			sourceTree = "<group>";
 		};
+		A0CF7321194D4671005A4436 /* TSLocateView */ = {
+			isa = PBXGroup;
+			children = (
+				A0CF7322194D4671005A4436 /* img */,
+				A0CF732A194D4671005A4436 /* ProvincesAndCities.plist */,
+				A0CF732B194D4671005A4436 /* TSLocateView.h */,
+				A0CF732C194D4671005A4436 /* TSLocateView.m */,
+				A0CF732D194D4671005A4436 /* TSLocateView.xib */,
+				A0CF732E194D4671005A4436 /* TSLocation.h */,
+				A0CF732F194D4671005A4436 /* TSLocation.m */,
+			);
+			path = TSLocateView;
+			sourceTree = "<group>";
+		};
+		A0CF7322194D4671005A4436 /* img */ = {
+			isa = PBXGroup;
+			children = (
+				A0CF7323194D4671005A4436 /* bg_023@2x.png */,
+				A0CF7324194D4671005A4436 /* btn_020.disable@2x.png */,
+				A0CF7325194D4671005A4436 /* btn_020.press@2x.png */,
+				A0CF7326194D4671005A4436 /* btn_020@2x.png */,
+				A0CF7327194D4671005A4436 /* btn_021.disable@2x.png */,
+				A0CF7328194D4671005A4436 /* btn_021.press@2x.png */,
+				A0CF7329194D4671005A4436 /* btn_021@2x.png */,
+			);
+			path = img;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -418,11 +471,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0B391BB194833CD0000C1DA /* AGPlaViewController.xib in Resources */,
+				A0CF7337194D4671005A4436 /* ProvincesAndCities.plist in Resources */,
 				987ADBF918AA476B00124964 /* InfoPlist.strings in Resources */,
+				A0CF7331194D4671005A4436 /* btn_020.disable@2x.png in Resources */,
+				A0CF7332194D4671005A4436 /* btn_020.press@2x.png in Resources */,
 				A0B391CD194867E10000C1DA /* AGPlanDestinationTableViewCell.xib in Resources */,
 				A0706F8C19458A3200BBBC32 /* AGDistributeViewController.xib in Resources */,
+				A0CF7334194D4671005A4436 /* btn_021.disable@2x.png in Resources */,
 				987ADC0118AA476B00124964 /* Images.xcassets in Resources */,
+				A0CF7336194D4671005A4436 /* btn_021@2x.png in Resources */,
+				A0CF7339194D4671005A4436 /* TSLocateView.xib in Resources */,
 				A04127E1194ACA6B0084A998 /* AGAddressViewController.xib in Resources */,
+				A0CF7333194D4671005A4436 /* btn_020@2x.png in Resources */,
+				A0CF7335194D4671005A4436 /* btn_021.press@2x.png in Resources */,
+				A0CF7330194D4671005A4436 /* bg_023@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,8 +545,10 @@
 				A0B391BA194833CD0000C1DA /* AGPlaViewController.m in Sources */,
 				A0706F8B19458A3200BBBC32 /* AGDistributeViewController.m in Sources */,
 				987ADBFF18AA476B00124964 /* AGAppDelegate.m in Sources */,
+				A0CF733A194D4671005A4436 /* TSLocation.m in Sources */,
 				987ADBFB18AA476B00124964 /* main.m in Sources */,
 				98ABA93218AC7EFF005C81F6 /* SGFocusImageFrame.m in Sources */,
+				A0CF7338194D4671005A4436 /* TSLocateView.m in Sources */,
 				987ADC2518AA4F9500124964 /* AGNavigationController.m in Sources */,
 				989B105C18AB5ED3008DD357 /* AGHomeViewController.m in Sources */,
 				989B105718AB5712008DD357 /* NSObject+NSJSONSerialization.m in Sources */,

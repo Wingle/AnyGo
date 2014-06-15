@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @class AGPlaViewController;
+@class AGPlanModel;
+
 
 @interface AGAddressViewController : UIViewController
 @property (weak, nonatomic) AGPlaViewController *planViewController;

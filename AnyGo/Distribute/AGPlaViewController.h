@@ -9,6 +9,7 @@
 #import "AGViewController.h"
 
 @class UIPlaceHolderTextView;
+@class AGPlanModel;
 
 @interface AGPlaViewController : AGViewController
 
@@ -24,6 +25,8 @@
 - (IBAction)dateButtonClicked:(id)sender;
 - (IBAction)getAddressButtonClicked:(id)sender;
 - (IBAction)endAddressButtonClicked:(id)sender;
+
+- (void)addAddressToPlan:(AGPlanModel *)plan;
 
 
 @end

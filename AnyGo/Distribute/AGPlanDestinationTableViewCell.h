@@ -10,5 +10,7 @@
 
 @interface AGPlanDestinationTableViewCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *addressLable;
+@property (weak, nonatomic) IBOutlet UITextView *planTextView;
+@property (weak, nonatomic) IBOutlet UIView *breakLine;
 
 @end

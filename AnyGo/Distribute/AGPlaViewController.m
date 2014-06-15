@@ -9,10 +9,12 @@
 #import "AGPlaViewController.h"
 #import "AGPlanDestinationTableViewCell.h"
 #import "AGAddressViewController.h"
+#import "AGPlanModel.h"
 
 @interface AGPlaViewController () <UITableViewDataSource, UITableViewDelegate>
 
 @property (strong, nonatomic) UITableView *tableView;
+@property (nonatomic, strong) NSMutableArray *dataSource;
 
 @end
 
@@ -35,6 +37,7 @@
     CGRect bounds = [UIScreen mainScreen].bounds;
     CGRect topViewFrame = self.topView.frame;
     self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, topViewFrame.size.height, bounds.size.width, bounds.size.height - self.topView.frame.size.height - 20.f -44.f) style:UITableViewStylePlain];
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     [self.view addSubview:self.tableView];
@@ -46,6 +49,7 @@
     
     self.navigationItem.rightBarButtonItem = rightItem;
 
+    self.dataSource = [NSMutableArray new];
     
     
     
@@ -66,13 +70,23 @@
 - (IBAction)endAddressButtonClicked:(id)sender {
 }
 
+#pragma mark - Utility Methods
+
 - (void)addAddress:(id)sender {
+    AGAddressViewController *addVc = [[AGAddressViewController alloc] initWithNibName:@"AGAddressViewController" bundle:nil];
+    addVc.planViewController = self;
+    [self presentViewController:addVc animated:YES completion:nil];
     
+}
+
+- (void)addAddressToPlan:(AGPlanModel *)plan {
+    [self.dataSource addObject:plan];
+    [self.tableView reloadData];
 }
 
 #pragma mark - Tableview delegate / datasource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 0;
+    return [self.dataSource count];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -83,13 +97,23 @@
     static NSString *AboutCellIdentifier = @"AboutCell";
     AGPlanDestinationTableViewCell *cell = (AGPlanDestinationTableViewCell *)[tableView dequeueReusableCellWithIdentifier:AboutCellIdentifier];
     if (cell == nil) {
-        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"UITableViewCell" owner:self options:nil];
+        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"AGPlanDestinationTableViewCell" owner:self options:nil];
         for (NSObject *obj in nib) {
             if ([obj isKindOfClass:[UITableViewCell class]]) {
                 cell = (AGPlanDestinationTableViewCell *) obj;
             }
         }
     }
+    NSInteger row = [indexPath row];
+    AGPlanModel *plan = self.dataSource[row];
+    cell.addressLable.text = plan.address;
+    cell.planTextView.text = plan.planDescription;
+    if (row == [self.dataSource count] - 1) {
+        cell.breakLine.hidden = YES;
+    }else {
+        cell.breakLine.hidden = NO;
+    }
+    
     return cell;
 }
 
