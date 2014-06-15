@@ -31,6 +31,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    self.title = @"结伴";
+    
     self.segmentedControl = [[UISegmentedControl alloc] initWithItems:@[@"国内", @"国际"]];
     self.segmentedControl.tintColor = [UIColor greenColor];
     self.segmentedControl.frame = CGRectMake(0, 0, 130.f, 29.f);
@@ -44,9 +46,7 @@
                                                                  action:@selector(distributePlan:)];
     
     self.navigationItem.rightBarButtonItem = rightItem;
-    
-    
-    
+
     
     
     

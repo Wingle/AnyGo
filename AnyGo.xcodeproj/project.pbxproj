@@ -32,14 +32,14 @@
 		98EFE58518B1E4450087B8C2 /* AGLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98EFE58418B1E4450087B8C2 /* AGLoginViewController.m */; };
 		98EFE58818B214DA0087B8C2 /* AGRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98EFE58718B214DA0087B8C2 /* AGRegisterViewController.m */; };
 		98EFE58B18B22A140087B8C2 /* AGSettingPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98EFE58A18B22A140087B8C2 /* AGSettingPasswordViewController.m */; };
+		A04127E0194ACA6B0084A998 /* AGAddressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A04127DE194ACA6B0084A998 /* AGAddressViewController.m */; };
+		A04127E1194ACA6B0084A998 /* AGAddressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A04127DF194ACA6B0084A998 /* AGAddressViewController.xib */; };
 		A0706F8B19458A3200BBBC32 /* AGDistributeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0706F8919458A3200BBBC32 /* AGDistributeViewController.m */; };
 		A0706F8C19458A3200BBBC32 /* AGDistributeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0706F8A19458A3200BBBC32 /* AGDistributeViewController.xib */; };
 		A0B391B61947FD9D0000C1DA /* MMLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B391B51947FD9D0000C1DA /* MMLocationManager.m */; };
 		A0B391BA194833CD0000C1DA /* AGPlaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B391B8194833CD0000C1DA /* AGPlaViewController.m */; };
 		A0B391BB194833CD0000C1DA /* AGPlaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0B391B9194833CD0000C1DA /* AGPlaViewController.xib */; };
 		A0B391BE194860310000C1DA /* AGPlanModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B391BD194860310000C1DA /* AGPlanModel.m */; };
-		A0B391C7194867B70000C1DA /* AGPlayStartTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B391C5194867B70000C1DA /* AGPlayStartTableViewCell.m */; };
-		A0B391C8194867B70000C1DA /* AGPlayStartTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0B391C6194867B70000C1DA /* AGPlayStartTableViewCell.xib */; };
 		A0B391CC194867E10000C1DA /* AGPlanDestinationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B391CA194867E10000C1DA /* AGPlanDestinationTableViewCell.m */; };
 		A0B391CD194867E10000C1DA /* AGPlanDestinationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0B391CB194867E10000C1DA /* AGPlanDestinationTableViewCell.xib */; };
 /* End PBXBuildFile section */
@@ -96,6 +96,9 @@
 		98EFE58718B214DA0087B8C2 /* AGRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGRegisterViewController.m; sourceTree = "<group>"; };
 		98EFE58918B22A140087B8C2 /* AGSettingPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGSettingPasswordViewController.h; sourceTree = "<group>"; };
 		98EFE58A18B22A140087B8C2 /* AGSettingPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGSettingPasswordViewController.m; sourceTree = "<group>"; };
+		A04127DD194ACA6B0084A998 /* AGAddressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGAddressViewController.h; sourceTree = "<group>"; };
+		A04127DE194ACA6B0084A998 /* AGAddressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGAddressViewController.m; sourceTree = "<group>"; };
+		A04127DF194ACA6B0084A998 /* AGAddressViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AGAddressViewController.xib; sourceTree = "<group>"; };
 		A0706F8819458A3200BBBC32 /* AGDistributeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGDistributeViewController.h; sourceTree = "<group>"; };
 		A0706F8919458A3200BBBC32 /* AGDistributeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGDistributeViewController.m; sourceTree = "<group>"; };
 		A0706F8A19458A3200BBBC32 /* AGDistributeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AGDistributeViewController.xib; sourceTree = "<group>"; };
@@ -106,9 +109,6 @@
 		A0B391B9194833CD0000C1DA /* AGPlaViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AGPlaViewController.xib; sourceTree = "<group>"; };
 		A0B391BC194860310000C1DA /* AGPlanModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGPlanModel.h; sourceTree = "<group>"; };
 		A0B391BD194860310000C1DA /* AGPlanModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGPlanModel.m; sourceTree = "<group>"; };
-		A0B391C4194867B70000C1DA /* AGPlayStartTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGPlayStartTableViewCell.h; sourceTree = "<group>"; };
-		A0B391C5194867B70000C1DA /* AGPlayStartTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGPlayStartTableViewCell.m; sourceTree = "<group>"; };
-		A0B391C6194867B70000C1DA /* AGPlayStartTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AGPlayStartTableViewCell.xib; sourceTree = "<group>"; };
 		A0B391C9194867E10000C1DA /* AGPlanDestinationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGPlanDestinationTableViewCell.h; sourceTree = "<group>"; };
 		A0B391CA194867E10000C1DA /* AGPlanDestinationTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGPlanDestinationTableViewCell.m; sourceTree = "<group>"; };
 		A0B391CB194867E10000C1DA /* AGPlanDestinationTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AGPlanDestinationTableViewCell.xib; sourceTree = "<group>"; };
@@ -320,12 +320,12 @@
 				A0B391B9194833CD0000C1DA /* AGPlaViewController.xib */,
 				A0B391BC194860310000C1DA /* AGPlanModel.h */,
 				A0B391BD194860310000C1DA /* AGPlanModel.m */,
-				A0B391C4194867B70000C1DA /* AGPlayStartTableViewCell.h */,
-				A0B391C5194867B70000C1DA /* AGPlayStartTableViewCell.m */,
-				A0B391C6194867B70000C1DA /* AGPlayStartTableViewCell.xib */,
 				A0B391C9194867E10000C1DA /* AGPlanDestinationTableViewCell.h */,
 				A0B391CA194867E10000C1DA /* AGPlanDestinationTableViewCell.m */,
 				A0B391CB194867E10000C1DA /* AGPlanDestinationTableViewCell.xib */,
+				A04127DD194ACA6B0084A998 /* AGAddressViewController.h */,
+				A04127DE194ACA6B0084A998 /* AGAddressViewController.m */,
+				A04127DF194ACA6B0084A998 /* AGAddressViewController.xib */,
 			);
 			path = Distribute;
 			sourceTree = "<group>";
@@ -417,12 +417,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0B391C8194867B70000C1DA /* AGPlayStartTableViewCell.xib in Resources */,
 				A0B391BB194833CD0000C1DA /* AGPlaViewController.xib in Resources */,
 				987ADBF918AA476B00124964 /* InfoPlist.strings in Resources */,
 				A0B391CD194867E10000C1DA /* AGPlanDestinationTableViewCell.xib in Resources */,
 				A0706F8C19458A3200BBBC32 /* AGDistributeViewController.xib in Resources */,
 				987ADC0118AA476B00124964 /* Images.xcassets in Resources */,
+				A04127E1194ACA6B0084A998 /* AGAddressViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,6 +477,7 @@
 				A0B391BE194860310000C1DA /* AGPlanModel.m in Sources */,
 				98EFE58B18B22A140087B8C2 /* AGSettingPasswordViewController.m in Sources */,
 				A0B391B61947FD9D0000C1DA /* MMLocationManager.m in Sources */,
+				A04127E0194ACA6B0084A998 /* AGAddressViewController.m in Sources */,
 				989B104518AB3AE5008DD357 /* WWADScrollView.m in Sources */,
 				987ADC2218AA4E9E00124964 /* AGTabBarController.m in Sources */,
 				A0B391BA194833CD0000C1DA /* AGPlaViewController.m in Sources */,
@@ -490,7 +491,6 @@
 				989B104B18AB41C0008DD357 /* AGADView.m in Sources */,
 				98EFE58818B214DA0087B8C2 /* AGRegisterViewController.m in Sources */,
 				98EFE58518B1E4450087B8C2 /* AGLoginViewController.m in Sources */,
-				A0B391C7194867B70000C1DA /* AGPlayStartTableViewCell.m in Sources */,
 				987ADC2818AA4FB300124964 /* AGViewController.m in Sources */,
 				A0B391CC194867E10000C1DA /* AGPlanDestinationTableViewCell.m in Sources */,
 			);

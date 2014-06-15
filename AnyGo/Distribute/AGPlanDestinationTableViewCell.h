@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface AGPlanDestinationTableViewCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UILabel *addressLable;
 
 @end

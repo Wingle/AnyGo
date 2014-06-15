@@ -8,12 +8,34 @@
 
 #import "AGViewController.h"
 
+@class UIPlaceHolderTextView;
+
 @interface AGPlaViewController : AGViewController
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
+
 @property (weak, nonatomic) IBOutlet UIView *topView;
 @property (weak, nonatomic) IBOutlet UILabel *dateLabel;
+@property (weak, nonatomic) IBOutlet UITextField *startAddress;
+@property (weak, nonatomic) IBOutlet UILabel *endAddress;
+@property (weak, nonatomic) IBOutlet UIView *showLineView;
+@property (weak, nonatomic) IBOutlet UIPlaceHolderTextView *startTextView;
+@property (weak, nonatomic) IBOutlet UIPlaceHolderTextView *endTextView;
 
 
 - (IBAction)dateButtonClicked:(id)sender;
+- (IBAction)getAddressButtonClicked:(id)sender;
+- (IBAction)endAddressButtonClicked:(id)sender;
+
+
+@end
+
+
+#import <Foundation/Foundation.h>
+
+@interface UIPlaceHolderTextView : UITextView
+
+@property (nonatomic, retain) NSString *placeholder;
+@property (nonatomic, retain) UIColor *placeholderColor;
+
+-(void)textChanged:(NSNotification*)notification;
 
 @end
