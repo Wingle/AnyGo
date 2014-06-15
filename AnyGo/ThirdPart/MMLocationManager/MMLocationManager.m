@@ -100,7 +100,10 @@
             NSString *street=[addressDic objectForKey:@"Street"];
             
             self.lastCity = city;
-            self.lastAddress=[NSString stringWithFormat:@"%@%@%@%@",state,city,subLocality,street];
+            self.lastAddress=[NSString stringWithFormat:@"%@%@%@%@",state ? state : @"",
+                              city ? city : @"",
+                              subLocality ? subLocality : @"",
+                              street ? street : @""];
             
             [standard setObject:self.lastCity forKey:MMLastCity];
             [standard setObject:self.lastAddress forKey:MMLastAddress];

@@ -10,6 +10,8 @@
 #import "AGPlanDestinationTableViewCell.h"
 #import "AGAddressViewController.h"
 #import "AGPlanModel.h"
+#import "MMLocationManager.h"
+#import <MBProgressHUD/MBProgressHUD.h>
 
 @interface AGPlaViewController () <UITableViewDataSource, UITableViewDelegate, UIActionSheetDelegate>
 
@@ -56,6 +58,15 @@
     
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    if ([self.dataSource count] == 0) {
+        self.showLineView.hidden = YES;
+    }else {
+        self.showLineView.hidden = NO;
+    }
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -66,7 +77,16 @@
 }
 
 - (IBAction)getAddressButtonClicked:(id)sender {
-    
+    MBProgressHUD *hud = [[MBProgressHUD alloc] initWithView:self.view];
+    hud.labelText = @"获取中...";
+    hud.removeFromSuperViewOnHide = YES;
+    [self.view addSubview:hud];
+    [hud show:YES];
+    __block __weak typeof(self) wself = self;
+    [[MMLocationManager shareLocation] getAddress:^(NSString *addressString) {
+        wself.startAddress.text = addressString;
+        [hud hide:YES];
+    }];
 }
 
 - (IBAction)endAddressButtonClicked:(id)sender {
@@ -77,6 +97,15 @@
 #pragma mark - Utility Methods
 
 - (void)addAddress:(id)sender {
+    if (self.endAddress.text == nil || [self.endAddress.text isEqualToString:@""]) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示"
+                                                        message:@"请先填写第一个目的地"
+                                                       delegate:nil
+                                              cancelButtonTitle:@"好的"
+                                              otherButtonTitles:nil, nil];
+        [alert show];
+        return;
+    }
     AGAddressViewController *addVc = [[AGAddressViewController alloc] initWithNibName:@"AGAddressViewController" bundle:nil];
     addVc.planViewController = self;
     [self presentViewController:addVc animated:YES completion:nil];
