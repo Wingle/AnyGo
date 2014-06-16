@@ -66,6 +66,7 @@
 - (IBAction)planButtonClicked:(id)sender {
     AGPlaViewController *planVc = [[AGPlaViewController alloc] initWithNibName:@"AGPlaViewController" bundle:nil];
     planVc.hidesBottomBarWhenPushed = YES;
+    planVc.distributeViewController = self;
     planVc.locateType = self.locateType;
     [self.navigationController pushViewController:planVc animated:YES];
 }

@@ -12,8 +12,9 @@
 #import "AGPlanModel.h"
 #import "MMLocationManager.h"
 #import <MBProgressHUD/MBProgressHUD.h>
+#import "AGDistributeViewController.h"
 
-@interface AGPlaViewController () <UITableViewDataSource, UITableViewDelegate, UIActionSheetDelegate>
+@interface AGPlaViewController () <UITableViewDataSource, UITableViewDelegate, UIActionSheetDelegate, UIAlertViewDelegate>
 
 @property (strong, nonatomic) UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *dataSource;
@@ -44,6 +45,12 @@
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     [self.view addSubview:self.tableView];
+    
+    UIBarButtonItem *leftItem = [[UIBarButtonItem alloc] initWithTitle:@"返回"
+                                                                  style:UIBarButtonItemStylePlain
+                                                                 target:self
+                                                                 action:@selector(beBack:)];
+    self.navigationItem.leftBarButtonItem = leftItem;
     
     UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithTitle:@"加目的地"
                                                                   style:UIBarButtonItemStylePlain
@@ -112,6 +119,61 @@
     
 }
 
+- (void)beBack:(id)sender {
+    BOOL canExite = YES;
+    NSString *msg = nil;
+    if (self.dateLabel.text == nil || [self.dateLabel.text isEqualToString:@""]) {
+        msg = @"出发日期";
+        canExite = NO;
+    }
+    if (self.startAddress.text == nil || [self.startAddress.text isEqualToString:@""]) {
+        msg = @"出发地点";
+        canExite = NO;
+    }
+    if (self.daysTextField.text == nil || [self.daysTextField.text isEqualToString:@""]) {
+        msg = @"总计天数";
+        canExite = NO;
+    }
+    if (self.endAddress.text == nil || [self.endAddress.text isEqualToString:@""]) {
+        msg = @"目的地";
+        canExite = NO;
+    }
+    if (!canExite) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示"
+                                                        message:[NSString stringWithFormat:@"%@还没填写，将无法发布，你确定要离开吗？",msg]
+                                                       delegate:self
+                                              cancelButtonTitle:@"离开"
+                                              otherButtonTitles:@"继续填写", nil];
+        [alert show];
+        return;
+    }
+    
+    AGAllPlanModel *allPlan = [[AGAllPlanModel alloc] init];
+    allPlan.days = self.daysTextField.text;
+    allPlan.beginDate = self.dateLabel.text;
+    
+    NSMutableArray *tmpArray = [NSMutableArray new];
+    
+    AGPlanModel *startModel = [[AGPlanModel alloc] init];
+    startModel.type = 0;
+    startModel.address = self.startAddress.text;
+    startModel.planDescription = self.startTextView.text;
+    [tmpArray addObject:startModel];
+    
+    AGPlanModel *endModel = [[AGPlanModel alloc] init];
+    endModel.type = 1;
+    endModel.address = self.endAddress.text;
+    endModel.planDescription = self.endTextView.text;
+    [tmpArray addObject:endModel];
+    
+    if ([self.dataSource count] > 0) {
+        [tmpArray addObjectsFromArray:self.dataSource];
+    }
+    allPlan.plans = tmpArray;
+    self.distributeViewController.allPlan = allPlan;
+    
+}
+
 - (void)addAddressToPlan:(AGPlanModel *)plan {
     [self.dataSource addObject:plan];
     [self.tableView reloadData];
@@ -161,6 +223,21 @@
     }else {
         LOG(@"Select");
         self.endAddress.text = location.city;
+    }
+}
+
+
+#pragma mark - UIAlertViewDelegate
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    switch (buttonIndex) {
+        case 0:
+        {
+            [self.navigationController popViewControllerAnimated:YES];
+            break;
+        }
+        default:
+            break;
     }
 }
 
@@ -265,5 +342,6 @@ CGFloat const UI_PLACEHOLDER_TEXT_CHANGED_ANIMATION_DURATION = 0.25;
     
     [super drawRect:rect];
 }
+
 
 @end

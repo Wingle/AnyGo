@@ -16,3 +16,12 @@
 @property (nonatomic, copy) NSString *planDescription;
 
 @end
+
+@interface AGAllPlanModel : NSObject
+
+@property (nonatomic, copy) NSString *beginDate;
+@property (nonatomic, copy) NSString *days;
+@property (nonatomic, strong) NSArray *plans;
+
+
+@end

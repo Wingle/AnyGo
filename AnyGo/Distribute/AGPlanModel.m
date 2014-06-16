@@ -11,3 +11,8 @@
 @implementation AGPlanModel
 
 @end
+
+
+@implementation AGAllPlanModel
+
+@end

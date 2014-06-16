@@ -8,6 +8,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AGPlaViewController">
             <connections>
                 <outlet property="dateLabel" destination="M4A-Lj-4Tw" id="v1B-NY-cHK"/>
+                <outlet property="daysTextField" destination="Koi-z2-awx" id="OSD-wc-gP9"/>
                 <outlet property="endAddress" destination="rcX-nF-VMD" id="JGv-4A-RYc"/>
                 <outlet property="endTextView" destination="tSb-Cj-p19" id="jM7-Ed-Ion"/>
                 <outlet property="showLineView" destination="NIL-hH-5XZ" id="Bx6-ih-weD"/>

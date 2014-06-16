@@ -11,9 +11,11 @@
 
 @class UIPlaceHolderTextView;
 @class AGPlanModel;
+@class AGDistributeViewController;
 
 @interface AGPlaViewController : AGViewController
 
+@property (weak, nonatomic) AGDistributeViewController *distributeViewController;
 @property (weak, nonatomic) IBOutlet UIView *topView;
 @property (weak, nonatomic) IBOutlet UILabel *dateLabel;
 @property (weak, nonatomic) IBOutlet UITextField *startAddress;
@@ -21,6 +23,7 @@
 @property (weak, nonatomic) IBOutlet UIView *showLineView;
 @property (weak, nonatomic) IBOutlet UIPlaceHolderTextView *startTextView;
 @property (weak, nonatomic) IBOutlet UIPlaceHolderTextView *endTextView;
+@property (weak, nonatomic) IBOutlet UITextField *daysTextField;
 @property (nonatomic, assign) TSLocateType locateType;
 
 
