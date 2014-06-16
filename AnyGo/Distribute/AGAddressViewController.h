@@ -6,13 +6,13 @@
 //  Copyright (c) 2014 WingleWong. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "AGViewController.h"
 
 @class AGPlaViewController;
 @class AGPlanModel;
 
 
-@interface AGAddressViewController : UIViewController
+@interface AGAddressViewController : AGViewController
 @property (weak, nonatomic) AGPlaViewController *planViewController;
 @property (weak, nonatomic) IBOutlet UILabel *addressLabel;
 @property (weak, nonatomic) IBOutlet UITextView *planTextView;

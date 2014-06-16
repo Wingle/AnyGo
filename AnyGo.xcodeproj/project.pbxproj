@@ -34,6 +34,8 @@
 		98EFE58B18B22A140087B8C2 /* AGSettingPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98EFE58A18B22A140087B8C2 /* AGSettingPasswordViewController.m */; };
 		A04127E0194ACA6B0084A998 /* AGAddressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A04127DE194ACA6B0084A998 /* AGAddressViewController.m */; };
 		A04127E1194ACA6B0084A998 /* AGAddressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A04127DF194ACA6B0084A998 /* AGAddressViewController.xib */; };
+		A0583C61194EA61F0043B5DC /* AGJieBanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0583C5F194EA61F0043B5DC /* AGJieBanViewController.m */; };
+		A0583C62194EA61F0043B5DC /* AGJieBanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0583C60194EA61F0043B5DC /* AGJieBanViewController.xib */; };
 		A0706F8B19458A3200BBBC32 /* AGDistributeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0706F8919458A3200BBBC32 /* AGDistributeViewController.m */; };
 		A0706F8C19458A3200BBBC32 /* AGDistributeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0706F8A19458A3200BBBC32 /* AGDistributeViewController.xib */; };
 		A0B391B61947FD9D0000C1DA /* MMLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B391B51947FD9D0000C1DA /* MMLocationManager.m */; };
@@ -112,6 +114,9 @@
 		A04127DD194ACA6B0084A998 /* AGAddressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGAddressViewController.h; sourceTree = "<group>"; };
 		A04127DE194ACA6B0084A998 /* AGAddressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGAddressViewController.m; sourceTree = "<group>"; };
 		A04127DF194ACA6B0084A998 /* AGAddressViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AGAddressViewController.xib; sourceTree = "<group>"; };
+		A0583C5E194EA61F0043B5DC /* AGJieBanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGJieBanViewController.h; sourceTree = "<group>"; };
+		A0583C5F194EA61F0043B5DC /* AGJieBanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGJieBanViewController.m; sourceTree = "<group>"; };
+		A0583C60194EA61F0043B5DC /* AGJieBanViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AGJieBanViewController.xib; sourceTree = "<group>"; };
 		A0706F8819458A3200BBBC32 /* AGDistributeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGDistributeViewController.h; sourceTree = "<group>"; };
 		A0706F8919458A3200BBBC32 /* AGDistributeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGDistributeViewController.m; sourceTree = "<group>"; };
 		A0706F8A19458A3200BBBC32 /* AGDistributeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AGDistributeViewController.xib; sourceTree = "<group>"; };
@@ -208,6 +213,7 @@
 		987ADBF418AA476B00124964 /* AnyGo */ = {
 			isa = PBXGroup;
 			children = (
+				A0583C5D194EA3E50043B5DC /* Jieban */,
 				A0706F8719458A1200BBBC32 /* Distribute */,
 				98EFE58218B1E42A0087B8C2 /* LS */,
 				989B105818AB5EBE008DD357 /* Home */,
@@ -340,6 +346,16 @@
 				98EFE58A18B22A140087B8C2 /* AGSettingPasswordViewController.m */,
 			);
 			path = LS;
+			sourceTree = "<group>";
+		};
+		A0583C5D194EA3E50043B5DC /* Jieban */ = {
+			isa = PBXGroup;
+			children = (
+				A0583C5E194EA61F0043B5DC /* AGJieBanViewController.h */,
+				A0583C5F194EA61F0043B5DC /* AGJieBanViewController.m */,
+				A0583C60194EA61F0043B5DC /* AGJieBanViewController.xib */,
+			);
+			path = Jieban;
 			sourceTree = "<group>";
 		};
 		A0706F8719458A1200BBBC32 /* Distribute */ = {
@@ -489,6 +505,7 @@
 				987ADC0118AA476B00124964 /* Images.xcassets in Resources */,
 				A0CF7336194D4671005A4436 /* btn_021@2x.png in Resources */,
 				A0CF7339194D4671005A4436 /* TSLocateView.xib in Resources */,
+				A0583C62194EA61F0043B5DC /* AGJieBanViewController.xib in Resources */,
 				A04127E1194ACA6B0084A998 /* AGAddressViewController.xib in Resources */,
 				A0CF7333194D4671005A4436 /* btn_020@2x.png in Resources */,
 				A0CF7335194D4671005A4436 /* btn_021.press@2x.png in Resources */,
@@ -551,6 +568,7 @@
 				989B104518AB3AE5008DD357 /* WWADScrollView.m in Sources */,
 				987ADC2218AA4E9E00124964 /* AGTabBarController.m in Sources */,
 				A0B391BA194833CD0000C1DA /* AGPlaViewController.m in Sources */,
+				A0583C61194EA61F0043B5DC /* AGJieBanViewController.m in Sources */,
 				A0706F8B19458A3200BBBC32 /* AGDistributeViewController.m in Sources */,
 				987ADBFF18AA476B00124964 /* AGAppDelegate.m in Sources */,
 				A0CF733A194D4671005A4436 /* TSLocation.m in Sources */,

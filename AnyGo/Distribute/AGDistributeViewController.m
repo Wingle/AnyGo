@@ -32,7 +32,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    self.title = @"结伴";
+    self.navigationItem.title = @"发布";
     
     self.segmentedControl = [[UISegmentedControl alloc] initWithItems:@[@"国内", @"国际"]];
     self.segmentedControl.tintColor = [UIColor greenColor];

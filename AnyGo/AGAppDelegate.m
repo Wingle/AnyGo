@@ -14,6 +14,7 @@
 #import "AGHomeViewController.h"
 #import "AGLoginViewController.h"
 #import "AGDistributeViewController.h"
+#import "AGJieBanViewController.h"
 
 #import <UMengAnalytics/MobClick.h>
 
@@ -82,7 +83,7 @@
 }
 
 - (void)buildViews {
-    AGHomeViewController *viewController0 = [[AGHomeViewController alloc] init];
+    AGJieBanViewController *viewController0 = [[AGJieBanViewController alloc] init];
     viewController0.view.backgroundColor = [UIColor redColor];
     AGNavigationController *navigationController0 = [[AGNavigationController alloc] initWithRootViewController:viewController0];
     
