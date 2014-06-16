@@ -36,6 +36,8 @@
 		A04127E1194ACA6B0084A998 /* AGAddressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A04127DF194ACA6B0084A998 /* AGAddressViewController.xib */; };
 		A0583C61194EA61F0043B5DC /* AGJieBanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0583C5F194EA61F0043B5DC /* AGJieBanViewController.m */; };
 		A0583C62194EA61F0043B5DC /* AGJieBanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0583C60194EA61F0043B5DC /* AGJieBanViewController.xib */; };
+		A0583C69194EC4EC0043B5DC /* AGPointAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = A0583C68194EC4EC0043B5DC /* AGPointAnnotation.m */; };
+		A0583C6C194EEE830043B5DC /* AGJiebanAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = A0583C6B194EEE830043B5DC /* AGJiebanAnnotationView.m */; };
 		A0706F8B19458A3200BBBC32 /* AGDistributeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0706F8919458A3200BBBC32 /* AGDistributeViewController.m */; };
 		A0706F8C19458A3200BBBC32 /* AGDistributeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0706F8A19458A3200BBBC32 /* AGDistributeViewController.xib */; };
 		A0B391B61947FD9D0000C1DA /* MMLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B391B51947FD9D0000C1DA /* MMLocationManager.m */; };
@@ -117,6 +119,10 @@
 		A0583C5E194EA61F0043B5DC /* AGJieBanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGJieBanViewController.h; sourceTree = "<group>"; };
 		A0583C5F194EA61F0043B5DC /* AGJieBanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGJieBanViewController.m; sourceTree = "<group>"; };
 		A0583C60194EA61F0043B5DC /* AGJieBanViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AGJieBanViewController.xib; sourceTree = "<group>"; };
+		A0583C67194EC4EC0043B5DC /* AGPointAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGPointAnnotation.h; sourceTree = "<group>"; };
+		A0583C68194EC4EC0043B5DC /* AGPointAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGPointAnnotation.m; sourceTree = "<group>"; };
+		A0583C6A194EEE830043B5DC /* AGJiebanAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGJiebanAnnotationView.h; sourceTree = "<group>"; };
+		A0583C6B194EEE830043B5DC /* AGJiebanAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGJiebanAnnotationView.m; sourceTree = "<group>"; };
 		A0706F8819458A3200BBBC32 /* AGDistributeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGDistributeViewController.h; sourceTree = "<group>"; };
 		A0706F8919458A3200BBBC32 /* AGDistributeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGDistributeViewController.m; sourceTree = "<group>"; };
 		A0706F8A19458A3200BBBC32 /* AGDistributeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AGDistributeViewController.xib; sourceTree = "<group>"; };
@@ -351,11 +357,23 @@
 		A0583C5D194EA3E50043B5DC /* Jieban */ = {
 			isa = PBXGroup;
 			children = (
+				A0583C66194EC4CD0043B5DC /* Map */,
 				A0583C5E194EA61F0043B5DC /* AGJieBanViewController.h */,
 				A0583C5F194EA61F0043B5DC /* AGJieBanViewController.m */,
 				A0583C60194EA61F0043B5DC /* AGJieBanViewController.xib */,
 			);
 			path = Jieban;
+			sourceTree = "<group>";
+		};
+		A0583C66194EC4CD0043B5DC /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				A0583C67194EC4EC0043B5DC /* AGPointAnnotation.h */,
+				A0583C68194EC4EC0043B5DC /* AGPointAnnotation.m */,
+				A0583C6A194EEE830043B5DC /* AGJiebanAnnotationView.h */,
+				A0583C6B194EEE830043B5DC /* AGJiebanAnnotationView.m */,
+			);
+			name = Map;
 			sourceTree = "<group>";
 		};
 		A0706F8719458A1200BBBC32 /* Distribute */ = {
@@ -567,9 +585,11 @@
 				A04127E0194ACA6B0084A998 /* AGAddressViewController.m in Sources */,
 				989B104518AB3AE5008DD357 /* WWADScrollView.m in Sources */,
 				987ADC2218AA4E9E00124964 /* AGTabBarController.m in Sources */,
+				A0583C69194EC4EC0043B5DC /* AGPointAnnotation.m in Sources */,
 				A0B391BA194833CD0000C1DA /* AGPlaViewController.m in Sources */,
 				A0583C61194EA61F0043B5DC /* AGJieBanViewController.m in Sources */,
 				A0706F8B19458A3200BBBC32 /* AGDistributeViewController.m in Sources */,
+				A0583C6C194EEE830043B5DC /* AGJiebanAnnotationView.m in Sources */,
 				987ADBFF18AA476B00124964 /* AGAppDelegate.m in Sources */,
 				A0CF733A194D4671005A4436 /* TSLocation.m in Sources */,
 				987ADBFB18AA476B00124964 /* main.m in Sources */,
