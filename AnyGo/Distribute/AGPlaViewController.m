@@ -52,7 +52,7 @@
                                                                  action:@selector(beBack:)];
     self.navigationItem.leftBarButtonItem = leftItem;
     
-    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithTitle:@"加目的地"
+    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithTitle:@"+加目的地"
                                                                   style:UIBarButtonItemStylePlain
                                                                  target:self
                                                                  action:@selector(addAddress:)];

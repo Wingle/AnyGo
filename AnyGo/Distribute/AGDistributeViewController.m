@@ -35,7 +35,7 @@
     self.navigationItem.title = @"发布";
     
     self.segmentedControl = [[UISegmentedControl alloc] initWithItems:@[@"国内", @"国际"]];
-    self.segmentedControl.tintColor = [UIColor greenColor];
+    self.segmentedControl.tintColor = [UIColor whiteColor];
     self.segmentedControl.frame = CGRectMake(0, 0, 130.f, 29.f);
     self.segmentedControl.selectedSegmentIndex = 0;
     self.locateType = 0;
