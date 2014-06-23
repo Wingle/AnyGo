@@ -285,6 +285,8 @@
 		A06D26F419519A78005FB142 /* PBFlatTextfield.m in Sources */ = {isa = PBXBuildFile; fileRef = A06D26E619519A78005FB142 /* PBFlatTextfield.m */; };
 		A06D26F519519A78005FB142 /* PBIconDrawning.m in Sources */ = {isa = PBXBuildFile; fileRef = A06D26E819519A78005FB142 /* PBIconDrawning.m */; };
 		A06D26F619519A78005FB142 /* UIImage+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = A06D26EA19519A78005FB142 /* UIImage+Additions.m */; };
+		A06D26FA1953D480005FB142 /* AGDLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A06D26F81953D480005FB142 /* AGDLViewController.m */; };
+		A06D26FB1953D480005FB142 /* AGDLViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A06D26F91953D480005FB142 /* AGDLViewController.xib */; };
 		A0706F8B19458A3200BBBC32 /* AGDistributeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0706F8919458A3200BBBC32 /* AGDistributeViewController.m */; };
 		A0706F8C19458A3200BBBC32 /* AGDistributeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0706F8A19458A3200BBBC32 /* AGDistributeViewController.xib */; };
 		A0B391B61947FD9D0000C1DA /* MMLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B391B51947FD9D0000C1DA /* MMLocationManager.m */; };
@@ -777,6 +779,9 @@
 		A06D26E819519A78005FB142 /* PBIconDrawning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBIconDrawning.m; sourceTree = "<group>"; };
 		A06D26E919519A78005FB142 /* UIImage+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Additions.h"; sourceTree = "<group>"; };
 		A06D26EA19519A78005FB142 /* UIImage+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Additions.m"; sourceTree = "<group>"; };
+		A06D26F71953D480005FB142 /* AGDLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGDLViewController.h; sourceTree = "<group>"; };
+		A06D26F81953D480005FB142 /* AGDLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGDLViewController.m; sourceTree = "<group>"; };
+		A06D26F91953D480005FB142 /* AGDLViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AGDLViewController.xib; sourceTree = "<group>"; };
 		A0706F8819458A3200BBBC32 /* AGDistributeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGDistributeViewController.h; sourceTree = "<group>"; };
 		A0706F8919458A3200BBBC32 /* AGDistributeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGDistributeViewController.m; sourceTree = "<group>"; };
 		A0706F8A19458A3200BBBC32 /* AGDistributeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AGDistributeViewController.xib; sourceTree = "<group>"; };
@@ -1012,6 +1017,9 @@
 				A0583C72194F2CBC0043B5DC /* AGYZMViewController.h */,
 				A0583C73194F2CBC0043B5DC /* AGYZMViewController.m */,
 				A0583C74194F2CBC0043B5DC /* AGYZMViewController.xib */,
+				A06D26F71953D480005FB142 /* AGDLViewController.h */,
+				A06D26F81953D480005FB142 /* AGDLViewController.m */,
+				A06D26F91953D480005FB142 /* AGDLViewController.xib */,
 			);
 			path = LS;
 			sourceTree = "<group>";
@@ -2146,6 +2154,7 @@
 				A0583EF2195026750043B5DC /* RecordingSignal006@2x.png in Resources */,
 				A0583EDA195026750043B5DC /* input-bar-flat@2x.png in Resources */,
 				A0583ECF195026750043B5DC /* contacts_add_photo@2x.png in Resources */,
+				A06D26FB1953D480005FB142 /* AGDLViewController.xib in Resources */,
 				A0583F0B195026750043B5DC /* sharemore_friendcard@2x.png in Resources */,
 				A0583ED8195026750043B5DC /* input-bar-background@2x.png in Resources */,
 				A0583EE0195026750043B5DC /* MoreFunctionFrame@2x.png in Resources */,
@@ -2406,6 +2415,7 @@
 				A06D26F219519A78005FB142 /* PBFlatSegmentedControl.m in Sources */,
 				A0583E75195026750043B5DC /* XHEmotion.m in Sources */,
 				A0583E50195026750043B5DC /* XHBaseViewController.m in Sources */,
+				A06D26FA1953D480005FB142 /* AGDLViewController.m in Sources */,
 				A0CF7338194D4671005A4436 /* TSLocateView.m in Sources */,
 				987ADC2518AA4F9500124964 /* AGNavigationController.m in Sources */,
 				A0583E97195026750043B5DC /* SETextView.m in Sources */,
